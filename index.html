@@ -11,13 +11,18 @@
             box-sizing: border-box;
         }
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #000;
+        }
+        .header, .footer {
+            width: 100vw;
+            height: 6vh;
             background-color: #000;
         }
         .container {
             width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         img {
             width: 100%;
@@ -26,9 +31,13 @@
     </style>
 </head>
 <body>
+    <div class="header"></div>
     <div class="container">
         <img src="png1.png" alt="First Image">
-        <img src="png2.png" alt="Second Image">
+        <div class="footer"></div>
+        <a href="https://chennaievents.vit.ac.in/vitchennai_vibrance/eventPreview" target="_blank">
+            <img src="png2.png" alt="Second Image">
+        </a>
     </div>
 </body>
 </html>
